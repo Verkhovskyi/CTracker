@@ -12,10 +12,10 @@ class ViewController: UIViewController {
 		
 	// Лейблы
 			
-	@IBOutlet weak var cTodayLabel: UILabel!
-	@IBOutlet weak var cWeeklyLabel: UILabel!
-	@IBOutlet weak var cMonthlyLabel: UILabel!
-	@IBOutlet weak var cPerPackLabel: UILabel!
+    @IBOutlet var cTodayLabel: UILabel!
+	@IBOutlet var cWeeklyLabel: UILabel!
+	@IBOutlet var cMonthlyLabel: UILabel!
+	@IBOutlet var cPerPackLabel: UILabel!
     
 	// Действия при загрузке приложения
     

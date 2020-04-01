@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="calendar.badge.plus" catalog="system"/>
                                 <connections>
-                                    <action selector="nextDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iDB-jz-bDy"/>
+                                    <action selector="nextDayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wv1-8U-cZ4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4L-gN-iwI">
@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="heart.slash.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="nextCigarette:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ytc-UZ-Op5"/>
+                                    <action selector="nextCigaretteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Krn-yT-u2P"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Another day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gX-qJ-8h4">
@@ -86,7 +86,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="square.fill.on.square.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="nextPack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Xv-D0-EBP"/>
+                                    <action selector="nextPackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETM-G5-dO5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O28-98-Me2">
@@ -132,10 +132,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="cigarettesMonthly" destination="YuH-dT-GAa" id="UWa-wa-QDM"/>
-                        <outlet property="cigarettesPerPack" destination="HzQ-6m-K0W" id="LkG-6i-rWh"/>
-                        <outlet property="cigarettesToday" destination="cdD-DE-YrI" id="TLm-bn-ksp"/>
-                        <outlet property="cigarettesWeekly" destination="7sz-ne-9Nq" id="1GL-bz-8WV"/>
+                        <outlet property="cMonthlyLabel" destination="YuH-dT-GAa" id="Qkr-LP-sfD"/>
+                        <outlet property="cPerPackLabel" destination="HzQ-6m-K0W" id="cmM-mk-fje"/>
+                        <outlet property="cTodayLabel" destination="cdD-DE-YrI" id="Ruw-PN-Xcs"/>
+                        <outlet property="cWeeklyLabel" destination="7sz-ne-9Nq" id="4bN-Dj-qHA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -144,10 +144,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.uturn.left.square" catalog="system" width="64" height="56"/>
-        <image name="calendar.badge.plus" catalog="system" width="64" height="50"/>
-        <image name="heart.slash.fill" catalog="system" width="64" height="56"/>
-        <image name="square.fill.on.square.fill" catalog="system" width="64" height="56"/>
-        <image name="trash" catalog="system" width="60" height="64"/>
+        <image name="arrow.uturn.left.square" catalog="system" width="128" height="114"/>
+        <image name="calendar.badge.plus" catalog="system" width="128" height="101"/>
+        <image name="heart.slash.fill" catalog="system" width="128" height="112"/>
+        <image name="square.fill.on.square.fill" catalog="system" width="128" height="113"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
     </resources>
 </document>
