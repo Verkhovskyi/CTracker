@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,22 +36,31 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="die young" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-ng-IkA">
-                                <rect key="frame" x="20" y="321" width="374" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="die young" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-ng-IkA">
+                                <rect key="frame" x="102.33333333333333" y="321" width="209.66666666666669" height="50"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                 <color key="textColor" red="0.53417804160000004" green="0.29551175070000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Live fast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-z2-a8d">
-                                <rect key="frame" x="20" y="291" width="374" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Live fast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-z2-a8d">
+                                <rect key="frame" x="102.33333333333333" y="291" width="209.66666666666669" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" red="0.53417804160000004" green="0.29551175070000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gnr-ng-IkA" firstAttribute="bottom" secondItem="tgf-z2-a8d" secondAttribute="bottom" id="7UM-YG-mBA"/>
+                            <constraint firstItem="gnr-ng-IkA" firstAttribute="trailing" secondItem="tgf-z2-a8d" secondAttribute="trailing" id="8wE-aZ-uCI"/>
+                            <constraint firstItem="gnr-ng-IkA" firstAttribute="centerX" secondItem="tgf-z2-a8d" secondAttribute="centerX" id="EUM-Mn-STH"/>
+                            <constraint firstItem="tgf-z2-a8d" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FY1-iG-5V3"/>
+                            <constraint firstItem="gnr-ng-IkA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OBi-kG-nwx"/>
+                            <constraint firstItem="gnr-ng-IkA" firstAttribute="leading" secondItem="tgf-z2-a8d" secondAttribute="leading" id="SpT-WF-4et"/>
+                            <constraint firstItem="gnr-ng-IkA" firstAttribute="firstBaseline" secondItem="tgf-z2-a8d" secondAttribute="firstBaseline" id="Tqu-oW-2dC"/>
+                            <constraint firstItem="gnr-ng-IkA" firstAttribute="top" secondItem="tgf-z2-a8d" secondAttribute="top" id="ZR4-Rx-Flj"/>
+                            <constraint firstItem="gnr-ng-IkA" firstAttribute="centerY" secondItem="tgf-z2-a8d" secondAttribute="centerY" id="iff-uK-qMb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
