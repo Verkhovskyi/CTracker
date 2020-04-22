@@ -43,6 +43,7 @@ class ViewController: UIViewController {
     @IBAction func undoButton(_ sender: UIButton) {
         days = backupDays
         packs = backupPacks
+		oldDate = backupDate
 		pushText()																	// Обновление лейблов после выполнения действия
         saveData()																	// Синхронизация для загрузки данных при следующем запуске приложения
     }
@@ -53,19 +54,11 @@ class ViewController: UIViewController {
         backup()																	// Создание бекапа для возможного использования undo
         days = [0]																	// Обнуление пользовательских данных
         packs = [0]
+		oldDate = Int(Calendar.current.dateComponents([.day], from: Date()).day!)
 		pushText()
         saveData()
     }
 
-	// Кнопка "Следующий день"
-    
-    @IBAction func nextDayButton(_ sender: UIButton) {
-        backup()
-        days.append(0)
-		pushText()
-        saveData()
-    }
-    
 	// Кнопка "Следующая пачка"
     
     @IBAction func nextPackButton(_ sender: UIButton) {
@@ -79,6 +72,8 @@ class ViewController: UIViewController {
     
     @IBAction func nextCigaretteButton(_ sender: UIButton) {
         backup()
+		dateUpdate()
+		day = days.count - 1
         days[day] = days[day] + 1
         pack = packs.count - 1
         packs[pack] = packs[pack] + 1
